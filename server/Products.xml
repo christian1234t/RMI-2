@@ -1,0 +1,30 @@
+<Shoes>
+    <Shoe>
+        <ProductCode>SH001</ProductCode>
+        <Name>Nike Air Max</Name>
+        <Quantity>5</Quantity>
+        <RetailPrice>120.0</RetailPrice>
+        <StorePrice>150.0</StorePrice>
+    </Shoe>
+    <Shoe>
+        <ProductCode>SH002</ProductCode>
+        <Name>Adidas Ultraboost</Name>
+        <Quantity>3</Quantity>
+        <RetailPrice>130.0</RetailPrice>
+        <StorePrice>160.0</StorePrice>
+    </Shoe>
+    <Shoe>
+        <ProductCode>SH003</ProductCode>
+        <Name>Puma RS-X</Name>
+        <Quantity>7</Quantity>
+        <RetailPrice>110.0</RetailPrice>
+        <StorePrice>140.0</StorePrice>
+    </Shoe>
+    <Shoe>
+        <ProductCode>SH004</ProductCode>
+        <Name>New Balance 990v5</Name>
+        <Quantity>2</Quantity>
+        <RetailPrice>140.0</RetailPrice>
+        <StorePrice>170.0</StorePrice>
+    </Shoe>
+</Shoes>

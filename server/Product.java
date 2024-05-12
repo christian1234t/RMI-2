@@ -1,26 +1,60 @@
 import java.rmi.RemoteException;
 
-public class Product implements ProductInterface{
-	// Attributes of product
+public class Product implements ProductInterface {
+	private String productCode;
 	private String name;
 	private String description;
-	private double price;
+	private int quantity;
+	private double retailPrice;
+	private double storePrice;
 
-	Product(String newName, String newDescription, double newPrice) throws RemoteException{
-		this.name = newName;
-		this.description = newDescription;
-		this.price = newPrice;
+	public Product(String productCode, String name, String description, int quantity, double retailPrice,
+			double storePrice) throws RemoteException {
+		this.productCode = productCode;
+		this.name = name;
+		this.description = description;
+		this.quantity = quantity;
+		this.retailPrice = retailPrice;
+		this.storePrice = storePrice;
 	}
-	public String getName() throws RemoteException{
-		return this.name;
+
+	public String viewProduct() throws RemoteException {
+		return "Product Code: " + productCode + "\n" +
+				"Name: " + name + "\n" +
+				"Description: " + description + "\n" +
+				"Quantity: " + quantity + "\n" +
+				"Retail Price: " + retailPrice + "\n" +
+				"Store Price: " + storePrice;
 	}
-	public String getDescription() throws RemoteException{
-		return this.description;
+
+	public String getProductCode() throws RemoteException {
+		return productCode;
 	}
-	public double getPrice() throws RemoteException{
-		return this.price;
+
+	// Implement the other getters as needed
+
+	@Override
+	public String getName() throws RemoteException {
+		return name;
 	}
-	public void changeProductName(String newName) throws RemoteException{
-		this.name = newName;
+
+	@Override
+	public String getDescription() throws RemoteException {
+		return description;
+	}
+
+	@Override
+	public int getQuantity() throws RemoteException {
+		return quantity;
+	}
+
+	@Override
+	public double getRetailPrice() throws RemoteException {
+		return retailPrice;
+	}
+
+	@Override
+	public double getStorePrice() throws RemoteException {
+		return storePrice;
 	}
 }
